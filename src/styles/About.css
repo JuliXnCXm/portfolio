@@ -1,0 +1,46 @@
+.about {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    padding-top:  93px;
+}
+.about--content__aboutLine {
+    width: 84px;
+    height: 0px;
+    border: 1px solid #000000;
+    margin-left: 70px;
+}
+.about--content {
+    transition: all 0.5s;
+}
+.about--content__description {
+    line-height: 34px;
+}
+
+.about--buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 45px;
+        margin-top: 100px;
+}
+
+.btn {
+    width: 254px;
+    height: 58px;
+    border: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.btn {
+    transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s;
+}
+
+
+
