@@ -2,7 +2,7 @@
     width: 50%;
     display: flex;
     margin: auto;
-    padding-top:  93px;
+    padding-top: 70px;
 }
 .about--content__aboutLine {
     width: 84px;
@@ -10,9 +10,7 @@
     border: 1px solid #000000;
     margin-left: 70px;
 }
-.about--content {
-    transition: all 0.5s;
-}
+
 .about--content__description {
     line-height: 34px;
 }

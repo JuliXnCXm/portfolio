@@ -8,7 +8,6 @@ const Header = () => {
             <Navbar className="navbar--menu" >
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/aboutMe">About Me</Nav.Link>
             </Navbar>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Spinner from './Spinner'
 import '../styles/Skills.css'
 
+
 const Skills = ({skills}) => {
     const [isLoading, setIsLoading] = React.useState(false)
 
@@ -16,7 +17,7 @@ const Skills = ({skills}) => {
                         return (
                         <li className='skillsContainer--key'>
                             <div className='skillsContainer--key__text'>
-                                <h2>{key}</h2>
+                                <h3>{key}</h3>
                                 <span>{skills[key].percent}%</span>
                             </div>
                             <div className='lineSkill'>
@@ -26,7 +27,9 @@ const Skills = ({skills}) => {
                         </li>)}):null}
                 </ul>
             </div>
-            <button className='downloadCv'>Download CV</button>
+                <a href="CV.pdf" className="downloadFile" download='CV.pdf' target="_blank">
+                    <button href="CV.pdf" className='downloadCv' download='CV.pdf' target="_blank">Download CV</button>
+                </a>
         </div>
   )
 }

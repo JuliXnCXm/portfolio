@@ -1,7 +1,5 @@
 .skillsContainer {
-    background-color: white;
     border-radius: 20px;
-    padding: 35px;
 }
 .skillsection {
     width: 50%;
@@ -17,8 +15,12 @@
     border-radius: 7px;
     color: white;
     border: none;
-    margin: 30px;
+    margin: 50px;
     cursor: pointer
+}
+
+.downloadFile {
+    display: contents
 }
 
 .skillsContainer--list {
@@ -26,11 +28,13 @@
     padding: 0;
     margin: auto;
     width: 90%;
+    columns: 2;
+    gap:50px;
 }
 .skillsContainer--key__text {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 .lineSkill{
@@ -40,6 +44,11 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
+.skillsContainer--key {
+    overflow: hidden;
+}
+
 .skillBar {
     height: 6px;
     transform-origin: bottom center;
