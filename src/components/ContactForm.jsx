@@ -1,30 +1,35 @@
 import React from 'react'
+import useContact from '../hooks/useContact'
 import {Form} from 'react-bootstrap'
+import '../styles/ContactForm.css'
+
 const ContactForm = ({handleClose}) => {
+
+    const {form, handleChange,handleSubmit} = useContact()
+
     return (
         <>
-            <span class="material-icons material-icons-outlined" onClick={handleClose}>
+            <span class="contact-icon material-icons material-icons-outlined" onClick={handleClose}>
                 close
             </span>
-            <div>Contact Me</div>
-            <Form>
-                <Form.Group className="mb-3" controlId="name">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" />
+            <Form className="formContainer--form" onSubmit={handleSubmit}>
+                <Form.Group className="mb-3">
+                    <Form.Label></Form.Label>
+                    <Form.Control type="text" placeholder='Name' name="name" value={form.name} onChange={handleChange} />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="email">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
+                <Form.Group className="mb-3 formContainer--form__email" controlId="email">
+                    <Form.Label></Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" name="email" value={form.email} onChange={handleChange} />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="email">
-                    <Form.Label>Topic</Form.Label>
-                    <Form.Control type="text"/>
+                <Form.Group className="mb-3 formContainer--form__topic">
+                    <Form.Label></Form.Label>
+                    <Form.Control type="text" placeholder='Topic' name="topic" value={form.topic} onChange={handleChange}/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="message">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                <Form.Group className="mb-3 formContainer--form__message">
+                    <Form.Label></Form.Label>
+                    <Form.Control as="textarea" rows={3} placeholder="Message" name="message" value={form.message} onChange={handleChange} />
                 </Form.Group>
-                <button>Contact Now</button>
+                <button id="formContainer--form__button" className="hero-container__button" type="submit">Send Signal</button>
             </Form>
         </>
     )

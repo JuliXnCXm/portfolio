@@ -2,7 +2,7 @@ const data = {
     web: {
         title: "Web Development",
         description:
-        "I am a web developer with a passion for building websites and web applications. I have experience in building websites using HTML, CSS, JavaScript, PHP, and MySQL. I have experience in building web applications using JavaScript, React, and Node.js. I have experience in building mobile applications using React Native and Ionic.",
+        "I am a Fullstack web developer with a passion for building websites and web applications. I have experience in building web applications using JavaScript, React, MongoDB and Node.js. Create websites since a WireFrame to a fully functional website that could supply a solution and converge with visual components is for me ART.",
         skills: {
         nodeJS: {
             color: "#7baa1a",
@@ -55,7 +55,7 @@ const data = {
     dataScience: {
         title: "Data Science",
         description:
-        "I am a data scientist with a passion for data analysis and machine learning. I have experience in building data analysis and machine learning applications using Python and SQL. I have experience in building data visualization applications using D3.js and Plotly.js.",
+        "I am a data scientist with a passion for data analysis and machine learning. I have experience building developments in different branches of data science (Analysis , Engineering, etc...). Projects such as scrapers , web crawlers, data Minning and data visualizations are my favorite.",
         skills: {
         Python: {
             color: "#76bc1a",

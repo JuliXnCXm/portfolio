@@ -7,6 +7,7 @@ import foto from '../assets/foto.jpg'
 import '../styles/Hero.css'
 import Header from './Header'
 import Modal from './Modal'
+import Name from './Name'
 import ContactForm from './ContactForm'
 
 const Hero = () => {
@@ -20,20 +21,25 @@ const Hero = () => {
         setShow(false)
     }
 
+    const handleCLickIcon = (e) => {
+        window.location.href = `${e.target.dataset.provider}`
+    }
+
 
     return (
         <>
             <div className="hero">
                 <Header/>
-                <div className='hero-container'>
-                    <img src={foto} alt="" />
-                    <div className="icons">
-                        <img src={logo_twitter} alt="" />
-                        <img src={logo_github} alt="" />
-                        <img src={logo_linkedin} alt="" />
-                        <img src={logo_google} alt="" />
+                <div className='hero_div'>
+                    <div className='hero-container'>
+                        <img src={foto} alt="" />
+                        <div className="icons">
+                            <img src={logo_github} alt="" data-provider="https://github.com/JuliXnCXm" onClick={handleCLickIcon} />
+                            <img src={logo_linkedin} alt="" data-provider="https://www.linkedin.com/in/camilo-garcia-escobar/" onClick={handleCLickIcon} />
+                        </div>
+                        <button className="hero-container__button" onClick={handleClick}>Contact Me</button>
                     </div>
-                    <button className="hero-container__button" onClick={handleClick}>Contact Me</button>
+                    <Name/>
                 </div>
             </div>
             {show ?

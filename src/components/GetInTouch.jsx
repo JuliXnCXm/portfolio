@@ -16,7 +16,7 @@ const GetInTouch = () => {
 
     return (
         <>
-            <div className="getIntouch">
+            <div className="getIntouch" id="contact">
                 <span className="getintouch--icon__left material-icons material-icons-outlined">
                     waving_hand
                 </span>

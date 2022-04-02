@@ -24,7 +24,7 @@ const About = () => {
     }, [isWeb])
     return (
         <>
-            <div className='about'>
+            <div className='about' id="about">
                 <div className='about--content'>
                     <h1 className='about--content__title'>About Me</h1>
                     <div className='about--content__aboutLine'></div>
