@@ -1,33 +1,38 @@
-#name {
-    font-size: 7rem;
-    text-align: center;
-    color: #fcedd8;
-    font-family: 'Niconne';
-    font-weight: 700;
-    animation: nombre;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+svg {
+    width: 482px;
+    height: 316px;
+    font-size: 226px;
 }
-
-@keyframes nombre {
-    from {
-        text-shadow:
-        25px 25px 0px #052939,
-        30px 0px #c11a2b,
-        35px 35px 0px #c11a2b,
-        40px 40px 0px #c11a2b,
-        45px 45px 0px #c11a2b;
-    }
-    to {
-        text-shadow:
-        5px 5px 0px #eb452b,
-        10px 10px 0px #efa032,
-        15px 15px 0px #46b59b,
-        20px 20px 0px #017e7f,
-        25px 25px 0px #052939,
-        30px 0px #c11a2b,
-        35px 35px 0px #c11a2b,
-        40px 40px 0px #c11a2b,
-        45px 45px 0px #c11a2b;
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 7% 28%;
+    stroke-width: 3px;
+    animation: stroke-offset 6s infinite linear;
+}
+.text-copy:nth-child(1) {
+    stroke: #360745;
+    stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+    stroke: #d61c59;
+    stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+    stroke: #e7d84b;
+    stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+    stroke: #efeac5;
+    stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+    stroke: #1b8798;
+    stroke-dashoffset: 35%;
+}
+@keyframes stroke-offset {
+    50% {
+        stroke-dashoffset: 35%;
+        stroke-dasharray: 0 87.5%;
     }
 }

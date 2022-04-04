@@ -1,14 +1,12 @@
 import React from 'react'
-import logo_twitter from '../assets/icons/twitter_s.svg'
 import logo_linkedin from '../assets/icons/linkdin_s.svg'
 import logo_github from '../assets/icons/github_s.svg'
-import logo_google from '../assets/icons/google_s.svg'
 import foto from '../assets/foto.jpg'
 import '../styles/Hero.css'
 import Header from './Header'
 import Modal from './Modal'
-import Name from './Name'
 import ContactForm from './ContactForm'
+import Name from './Name'
 
 const Hero = () => {
     const [show, setShow] = React.useState(false)
@@ -31,6 +29,7 @@ const Hero = () => {
             <div className="hero">
                 <Header/>
                 <div className='hero_div'>
+                    <Name/>
                     <div className='hero-container'>
                         <img src={foto} alt="" />
                         <div className="icons">
@@ -39,7 +38,6 @@ const Hero = () => {
                         </div>
                         <button className="hero-container__button" onClick={handleClick}>Contact Me</button>
                     </div>
-                    <Name/>
                 </div>
             </div>
             {show ?

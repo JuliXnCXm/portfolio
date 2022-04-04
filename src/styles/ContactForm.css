@@ -1,6 +1,4 @@
 .formContainer--form {
-    background-image: url('../assets/back.jpg');
-    background-size: cover;
     position: absolute;
     padding: 50px;
     width: 50vh;
@@ -55,6 +53,6 @@ textarea:focus-within {
     border-bottom: 3px solid #416cef;
 }
 
-input:focus-within {
+#inputContact:focus-within {
     border-bottom: 3px solid #416cef;
 }

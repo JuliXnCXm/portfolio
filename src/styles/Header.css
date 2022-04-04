@@ -34,3 +34,8 @@ a {
 .navbar--menu>a:hover {
     color: #F4A442
 }
+
+.navbar--header__logo {
+    font-family: 'Alumni Sans Inline One', cursive;
+    margin-left: 20px;
+}
